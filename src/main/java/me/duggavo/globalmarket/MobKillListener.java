@@ -18,7 +18,7 @@ public class MobKillListener implements Listener {
 		if (killer == null) {
 			return;
 		}
-        if (Math.random() > plugin.getMobKillRewardChance()) {
+        if (Math.random() < plugin.getMobKillRewardChance()) {
             plugin.getEconomy().depositPlayer(killer, plugin.getMobKillReward());
         }
 	}
