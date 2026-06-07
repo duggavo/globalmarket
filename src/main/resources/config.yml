@@ -1,0 +1,9 @@
+# The fee applied to all buy and sell operations. 0 = 0%, 1 = 100%.
+# This fee is kept in the market's liquidity pool, growing it over time.
+trading-fee: 0.10
+
+# The chance that killing a mob gives you a monetary reward. 0.10 = 10%.
+mob-kill-reward-chance: 0.10
+
+# The reward you can earn when killing mobs.
+mob-kill-reward: 1

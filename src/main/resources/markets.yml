@@ -1,0 +1,81 @@
+markets:
+  # ==========================================
+  # ORES & METALS
+  # ==========================================
+
+  DIAMOND: # Starting price 150
+    currency-pool: 150000.0
+    item-pool: 1000.0
+
+  NETHERITE_INGOT: # Starting price 1500
+    currency-pool: 150000.0
+    item-pool: 100.0
+
+  IRON_INGOT: # Starting price 5
+    currency-pool: 5000.0
+    item-pool: 1000.0
+
+  GOLD_INGOT: # Starting price 15
+    currency-pool: 15000.0
+    item-pool: 1000.0
+
+  EMERALD: # Starting price 25
+    currency-pool: 25000.0
+    item-pool: 1000.0
+
+  COAL: # Starting price 1
+    currency-pool: 5000.0
+    item-pool: 5000.0
+
+  REDSTONE: # Starting price 1
+    currency-pool: 10000.0
+    item-pool: 10000.0
+
+  LAPIS_LAZULI: # Starting price 2
+    currency-pool: 20000.0
+    item-pool: 10000.0
+
+  # ==========================================
+  # BASIC RESOURCES & BUILDING
+  # ==========================================
+  COBBLESTONE: # Starting price 0.1
+    currency-pool: 10000.0
+    item-pool: 100000.0
+
+  STONE: # Starting price 0.2
+    currency-pool: 10000.0
+    item-pool: 50000.0
+
+  GLASS: # Starting price 0.5
+    currency-pool: 5000.0
+    item-pool: 10000.0
+
+  # ==========================================
+  # FARMING
+  # ==========================================
+  WHEAT: # Starting price 0.5
+    currency-pool: 5000.0
+    item-pool: 10000.0
+
+  CARROT: # Starting price 0.5
+    currency-pool: 5000.0
+    item-pool: 10000.0
+
+  POTATO: # Starting price 0.5
+    currency-pool: 5000.0
+    item-pool: 10000.0
+
+  # ==========================================
+  # RARE ITEMS
+  # ==========================================
+  ELYTRA: # Starting price 10000
+    currency-pool: 50000.0
+    item-pool: 5.0
+
+  SHULKER_BOX: # Starting price 1000
+    currency-pool: 5000.0
+    item-pool: 5.0
+
+  EXPERIENCE_BOTTLE: # Starting price 10
+    currency-pool: 1000.0
+    item-pool: 100.0

@@ -1,0 +1,13 @@
+main: me.duggavo.globalmarket.GlobalMarketPlugin
+name: globalmarket
+version: 1.0
+depend: [Vault]
+commands:
+  market:
+    description: Global Market trading commands
+    usage: /market <buy|sell|info|create> [item] [amount]
+    permission: globalmarket.use
+permissions:
+  globalmarket.use:
+    description: Allows using the /market command
+    default: true
