@@ -1,6 +1,8 @@
 package me.duggavo.globalmarket;
 
 import net.milkbowl.vault.economy.Economy;
+
+import org.bstats.bukkit.Metrics;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -18,6 +20,9 @@ public class GlobalMarketPlugin extends JavaPlugin {
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
+
+        int pluginId = 31901;
+        new Metrics(this, pluginId);
 
         marketManager = new MarketManager(this);
         marketManager.loadMarkets();

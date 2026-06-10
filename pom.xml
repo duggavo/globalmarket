@@ -6,12 +6,11 @@
 
   <groupId>me.duggavo.globalmarket</groupId>
   <artifactId>globalmarket</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.1</version>
   <packaging>jar</packaging>
 
   <name>globalmarket</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://github.com/duggavo/globalmarket/</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -42,6 +41,12 @@
         <artifactId>VaultAPI</artifactId>
         <version>1.7</version>
         <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.bstats</groupId>
+        <artifactId>bstats-bukkit</artifactId>
+        <version>3.2.1</version>
+        <scope>compile</scope>
       </dependency>
   </dependencies>
 
@@ -100,5 +105,28 @@
         </plugin>
       </plugins>
     </pluginManagement>
+    <plugins>
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-shade-plugin</artifactId>
+          <version>3.6.2</version>
+          <configuration>
+              <relocations>
+                  <relocation>
+                      <pattern>org.bstats</pattern>
+                      <shadedPattern>me.duggavo.globalmarket</shadedPattern>
+                  </relocation>
+              </relocations>
+          </configuration>
+          <executions>
+              <execution>
+                  <phase>package</phase>
+                  <goals>
+                      <goal>shade</goal>
+                  </goals>
+              </execution>
+          </executions>
+      </plugin>
+    </plugins>
   </build>
 </project>
